@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Md Jihadur Rahaman - Curious Learner & Knowledge Seeker exploring philosophy, economics, politics, and moral values">
+    <meta name="keywords" content="About, Md Jihadur Rahaman, Philosophy, Economics, Politics">
+    <meta name="author" content="Md Jihadur Rahaman">
+    
+    <title>About - Md Jihadur Rahaman</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/about.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav-brand">
+                <a href="../index.html" class="nav-logo">
+                    <i class="fas fa-book-open"></i>
+                    <span>JR Blog</span>
+                </a>
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">
+                            <i class="fas fa-blog"></i> Blog
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">
+                            <i class="fas fa-images"></i> Gallery
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link active">
+                            <i class="fas fa-user"></i> About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">
+                            <i class="fas fa-envelope"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-actions">
+                <button class="nav-icon search-btn" id="searchBtn" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="nav-icon theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="nav-icon hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <button class="search-close" id="searchClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="search-content">
+                <h2>Search Articles</h2>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Type to search..." autocomplete="off">
+                </div>
+                <div class="search-results" id="searchResults"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image-wrapper animate-on-scroll">
+                    <div class="hero-image-container">
+                        <img src="../images/profile.jpg" alt="Md Jihadur Rahaman" class="hero-image"
+                             onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22400%22%3E%3Crect fill=%22%236366f1%22 width=%22400%22 height=%22400%22/%3E%3Ctext fill=%22white%22 font-family=%22Arial%22 font-size=%22180%22 x=%22200%22 y=%22260%22 text-anchor=%22middle%22%3EJR%3C/text%3E%3C/svg%3E'">
+                        <div class="hero-image-ring"></div>
+                    </div>
+                </div>
+                <div class="hero-text animate-on-scroll">
+                    <h1 class="hero-title">About Me</h1>
+                    <h2 class="hero-subtitle">Md Jihadur Rahaman</h2>
+                    <p class="hero-tagline">Curious Learner & Knowledge Seeker</p>
+                    <p class="hero-description">
+                        Welcome to my corner of the internet. I'm passionate about exploring the fundamental 
+                        questions of existence, society, and human values through the lenses of philosophy, 
+                        economics, politics, and moral discourse.
+                    </p>
+                    <div class="hero-social">
+                        <a href="https://www.facebook.com/profile.php?id=100065185542821" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/jr__jihad" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/MdJihadurRahaman" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/jr_jihad_forever" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@MdJihadurRahaman" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bio Section -->
+    <section class="bio-section section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">My Story</h2>
+                <p class="section-subtitle">A journey of curiosity and continuous learning</p>
+            </div>
+            <div class="bio-content">
+                <div class="bio-text animate-on-scroll">
+                    <p>
+                        I've always been fascinated by the big questions in life. What gives our existence meaning? 
+                        How should societies organize themselves? What principles should guide our moral decisions? 
+                        These questions have driven my intellectual curiosity from a young age.
+                    </p>
+                    <p>
+                        Through this blog, I explore diverse topics ranging from ancient philosophy to modern economics, 
+                        from political theory to moral philosophy. My goal is not to provide definitive answers, but to 
+                        engage in thoughtful exploration and to invite others to join in the conversation.
+                    </p>
+                    <p>
+                        I believe that understanding these fundamental questions—about ethics, governance, value, and 
+                        human nature—is essential for navigating our complex modern world. Whether you agree or disagree 
+                        with my perspectives, I hope my writings spark reflection and meaningful dialogue.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section class="interests-section section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Areas of Interest</h2>
+                <p class="section-subtitle">Topics I explore and write about</p>
+            </div>
+            <div class="interests-grid">
+                <div class="interest-card animate-on-scroll">
+                    <div class="interest-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="interest-title">Philosophy</h3>
+                    <p class="interest-description">
+                        Exploring existentialism, ethics, epistemology, and the fundamental nature of reality, 
+                        knowledge, and human existence.
+                    </p>
+                </div>
+                <div class="interest-card animate-on-scroll">
+                    <div class="interest-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="interest-title">Economics</h3>
+                    <p class="interest-description">
+                        Understanding economic systems, market dynamics, inequality, and how societies 
+                        create and distribute value.
+                    </p>
+                </div>
+                <div class="interest-card animate-on-scroll">
+                    <div class="interest-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3 class="interest-title">Politics</h3>
+                    <p class="interest-description">
+                        Examining governance systems, political philosophy, democracy, power structures, 
+                        and collective decision-making.
+                    </p>
+                </div>
+                <div class="interest-card animate-on-scroll">
+                    <div class="interest-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3 class="interest-title">Moral Values</h3>
+                    <p class="interest-description">
+                        Investigating ethical principles, moral reasoning, virtue ethics, and what it 
+                        means to live a good and meaningful life.
+                    </p>
+                </div>
+                <div class="interest-card animate-on-scroll">
+                    <div class="interest-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="interest-title">Critical Thinking</h3>
+                    <p class="interest-description">
+                        Developing analytical skills, questioning assumptions, evaluating arguments, 
+                        and thinking independently about complex issues.
+                    </p>
+                </div>
+                <div class="interest-card animate-on-scroll">
+                    <div class="interest-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="interest-title">Social Issues</h3>
+                    <p class="interest-description">
+                        Addressing contemporary challenges including justice, equality, human rights, 
+                        and the role of individuals in society.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Knowledge & Expertise</h2>
+                <p class="section-subtitle">Areas where I focus my study and writing</p>
+            </div>
+            <div class="skills-content">
+                <div class="skill-item animate-on-scroll">
+                    <div class="skill-header">
+                        <span class="skill-name">Philosophical Analysis</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                </div>
+                <div class="skill-item animate-on-scroll">
+                    <div class="skill-header">
+                        <span class="skill-name">Economic Theory</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+                <div class="skill-item animate-on-scroll">
+                    <div class="skill-header">
+                        <span class="skill-name">Political Science</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80"></div>
+                    </div>
+                </div>
+                <div class="skill-item animate-on-scroll">
+                    <div class="skill-header">
+                        <span class="skill-name">Ethical Reasoning</span>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="88"></div>
+                    </div>
+                </div>
+                <div class="skill-item animate-on-scroll">
+                    <div class="skill-header">
+                        <span class="skill-name">Research & Writing</span>
+                        <span class="skill-percentage">92%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="92"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="values-section section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Core Values</h2>
+                <p class="section-subtitle">Principles that guide my work and life</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card animate-on-scroll">
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="value-title">Intellectual Honesty</h3>
+                    <p class="value-description">
+                        Commitment to truth-seeking, acknowledging uncertainty, and being willing to 
+                        change views when presented with better evidence or arguments.
+                    </p>
+                </div>
+                <div class="value-card animate-on-scroll">
+                    <div class="value-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="value-title">Open Dialogue</h3>
+                    <p class="value-description">
+                        Believing in the power of respectful conversation and the exchange of ideas, 
+                        even with those who hold different perspectives.
+                    </p>
+                </div>
+                <div class="value-card animate-on-scroll">
+                    <div class="value-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="value-title">Lifelong Learning</h3>
+                    <p class="value-description">
+                        Embracing curiosity and the continuous pursuit of knowledge, understanding 
+                        that learning is a never-ending journey.
+                    </p>
+                </div>
+                <div class="value-card animate-on-scroll">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="value-title">Compassion</h3>
+                    <p class="value-description">
+                        Approaching all discussions with empathy and recognition of our shared humanity, 
+                        while maintaining intellectual rigor.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section section">
+        <div class="container">
+            <div class="cta-content animate-on-scroll">
+                <h2 class="cta-title">Let's Connect</h2>
+                <p class="cta-description">
+                    I'm always interested in engaging with fellow seekers of knowledge and wisdom. 
+                    Whether you have questions, feedback, or simply want to discuss ideas, I'd love to hear from you.
+                </p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Get in Touch
+                    </a>
+                    <a href="blog.html" class="btn btn-secondary">
+                        <i class="fas fa-book-reader"></i> Read My Articles
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">
+                        <i class="fas fa-book-open"></i> JR Blog
+                    </h3>
+                    <p class="footer-description">
+                        Exploring fundamental questions of existence, society, and human values through philosophy, economics, politics, and moral discourse.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/profile.php?id=100065185542821" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/jr__jihad" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/MdJihadurRahaman" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/jr_jihad_forever" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@MdJihadurRahaman" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                        <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                        <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-heading">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="blog.html?category=Philosophy"><i class="fas fa-brain"></i> Philosophy</a></li>
+                        <li><a href="blog.html?category=Economics"><i class="fas fa-chart-line"></i> Economics</a></li>
+                        <li><a href="blog.html?category=Politics"><i class="fas fa-landmark"></i> Politics</a></li>
+                        <li><a href="blog.html?category=Moral Values"><i class="fas fa-balance-scale"></i> Moral Values</a></li>
+                        <li><a href="blog.html?category=Notes"><i class="fas fa-sticky-note"></i> Notes</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-heading">Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:jr_jihad@yahoo.com">jr_jihad@yahoo.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Dhaka, Bangladesh</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Md Jihadur Rahaman. All rights reserved.</p>
+                <p>Built with <i class="fas fa-heart"></i> for sharing knowledge</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="../js/about.js"></script>
+</body>
+</html>

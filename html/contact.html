@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Md Jihadur Rahaman - Get in touch for discussions, questions, or collaboration">
+    <meta name="keywords" content="Contact, Md Jihadur Rahaman, Email, Message">
+    <meta name="author" content="Md Jihadur Rahaman">
+    
+    <title>Contact - Md Jihadur Rahaman</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav-brand">
+                <a href="../index.html" class="nav-logo">
+                    <i class="fas fa-book-open"></i>
+                    <span>JR Blog</span>
+                </a>
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">
+                            <i class="fas fa-blog"></i> Blog
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">
+                            <i class="fas fa-images"></i> Gallery
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">
+                            <i class="fas fa-user"></i> About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">
+                            <i class="fas fa-envelope"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-actions">
+                <button class="nav-icon search-btn" id="searchBtn" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="nav-icon theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="nav-icon hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <button class="search-close" id="searchClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="search-content">
+                <h2>Search Articles</h2>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Type to search..." autocomplete="off">
+                </div>
+                <div class="search-results" id="searchResults"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="page-title">Get in Touch</h1>
+                <p class="page-subtitle">I'd love to hear from you. Feel free to reach out for discussions, questions, or collaboration.</p>
+                <nav class="breadcrumb">
+                    <a href="../index.html"><i class="fas fa-home"></i> Home</a>
+                    <span><i class="fas fa-chevron-right"></i></span>
+                    <span>Contact</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info-section section">
+        <div class="container">
+            <div class="contact-info-grid">
+                <div class="contact-info-card animate-on-scroll">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="info-title">Email</h3>
+                    <p class="info-text">
+                        <a href="mailto:jr_jihad@yahoo.com">jr_jihad@yahoo.com</a>
+                    </p>
+                    <p class="info-description">Send me an email anytime</p>
+                </div>
+
+                <div class="contact-info-card animate-on-scroll">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="info-title">Location</h3>
+                    <p class="info-text">Dhaka, Bangladesh</p>
+                    <p class="info-description">Based in Dhaka</p>
+                </div>
+
+                <div class="contact-info-card animate-on-scroll">
+                    <div class="info-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3 class="info-title">Social Media</h3>
+                    <div class="info-social">
+                        <a href="https://www.facebook.com/profile.php?id=100065185542821" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/jr__jihad" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/MdJihadurRahaman" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/jr_jihad_forever" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <p class="info-description">Connect on social platforms</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Send a Message</h2>
+                <p class="section-subtitle">Fill out the form below and I'll get back to you as soon as possible</p>
+            </div>
+
+            <div class="form-container">
+                <form id="contactForm" class="contact-form animate-on-scroll" action="https://formspree.io/f/xlglqvvb" method="POST">
+                    <!-- Name Field -->
+                    <div class="form-group">
+                        <label for="name" class="form-label">
+                            Name <span class="required">*</span>
+                        </label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-user input-icon"></i>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                class="form-input" 
+                                placeholder="Your full name"
+                                required
+                            >
+                        </div>
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+
+                    <!-- Email Field -->
+                    <div class="form-group">
+                        <label for="email" class="form-label">
+                            Email <span class="required">*</span>
+                        </label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-envelope input-icon"></i>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="form-input" 
+                                placeholder="your.email@example.com"
+                                required
+                            >
+                        </div>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+
+                    <!-- Subject Field (Optional) -->
+                    <div class="form-group">
+                        <label for="subject" class="form-label">
+                            Subject <span class="optional">(Optional)</span>
+                        </label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-tag input-icon"></i>
+                            <input 
+                                type="text" 
+                                id="subject" 
+                                name="subject" 
+                                class="form-input" 
+                                placeholder="What is this about?"
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Message Field -->
+                    <div class="form-group">
+                        <label for="message" class="form-label">
+                            Message <span class="required">*</span>
+                        </label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-comment-dots input-icon"></i>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                class="form-input form-textarea" 
+                                placeholder="Write your message here..."
+                                rows="6"
+                                required
+                            ></textarea>
+                        </div>
+                        <div class="character-count">
+                            <span id="charCount">0</span> / 1000 characters
+                        </div>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary" id="submitBtn">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Send Message</span>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Success Message -->
+                <div class="form-message success-message" id="successMessage" style="display: none;">
+                    <div class="message-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Message Sent Successfully!</h3>
+                    <p>Thank you for reaching out. I'll get back to you as soon as possible.</p>
+                    <button class="btn btn-secondary" id="sendAnotherBtn">
+                        <i class="fas fa-plus"></i> Send Another Message
+                    </button>
+                </div>
+
+                <!-- Error Message -->
+                <div class="form-message error-alert" id="errorMessage" style="display: none;">
+                    <div class="message-icon">
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
+                    <h3>Oops! Something went wrong</h3>
+                    <p id="errorText">There was an error sending your message. Please try again.</p>
+                    <button class="btn btn-secondary" id="tryAgainBtn">
+                        <i class="fas fa-redo"></i> Try Again
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Common questions about getting in touch</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item animate-on-scroll">
+                    <div class="faq-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="faq-question">How quickly will you respond?</h3>
+                    <p class="faq-answer">I typically respond within 24-48 hours. For urgent matters, please mention it in the subject line.</p>
+                </div>
+
+                <div class="faq-item animate-on-scroll">
+                    <div class="faq-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="faq-question">What topics can I contact you about?</h3>
+                    <p class="faq-answer">Feel free to reach out about philosophy, economics, politics, moral values, or any topic discussed on this blog. Collaboration ideas are also welcome.</p>
+                </div>
+
+                <div class="faq-item animate-on-scroll">
+                    <div class="faq-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="faq-question">Do you accept guest posts?</h3>
+                    <p class="faq-answer">I'm open to well-researched guest contributions that align with the blog's focus. Send your pitch via the contact form.</p>
+                </div>
+
+                <div class="faq-item animate-on-scroll">
+                    <div class="faq-icon">
+                        <i class="fas fa-share-nodes"></i>
+                    </div>
+                    <h3 class="faq-question">Can I share your articles?</h3>
+                    <p class="faq-answer">Absolutely! Feel free to share any article with proper attribution. You can use the social share buttons on each post.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">
+                        <i class="fas fa-book-open"></i> JR Blog
+                    </h3>
+                    <p class="footer-description">
+                        Exploring fundamental questions of existence, society, and human values through philosophy, economics, politics, and moral discourse.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/profile.php?id=100065185542821" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/jr__jihad" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/MdJihadurRahaman" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/jr_jihad_forever" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@MdJihadurRahaman" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                        <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                        <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-heading">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="blog.html?category=Philosophy"><i class="fas fa-brain"></i> Philosophy</a></li>
+                        <li><a href="blog.html?category=Economics"><i class="fas fa-chart-line"></i> Economics</a></li>
+                        <li><a href="blog.html?category=Politics"><i class="fas fa-landmark"></i> Politics</a></li>
+                        <li><a href="blog.html?category=Moral Values"><i class="fas fa-balance-scale"></i> Moral Values</a></li>
+                        <li><a href="blog.html?category=Notes"><i class="fas fa-sticky-note"></i> Notes</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-heading">Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:jr_jihad@yahoo.com">jr_jihad@yahoo.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Dhaka, Bangladesh</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Md Jihadur Rahaman. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="../js/contact.js"></script>
+</body>
+</html>

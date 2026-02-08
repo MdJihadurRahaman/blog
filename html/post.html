@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read article by Md Jihadur Rahaman">
+    <meta name="keywords" content="Blog, Philosophy, Economics, Politics, Moral Values">
+    <meta name="author" content="Md Jihadur Rahaman">
+    
+    <!-- Open Graph Meta Tags (will be updated by JavaScript) -->
+    <meta property="og:title" content="Article - Md Jihadur Rahaman">
+    <meta property="og:description" content="Read this article on JR Blog">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    
+    <title>Article - Md Jihadur Rahaman</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/post.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress" id="readingProgress"></div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav-brand">
+                <a href="../index.html" class="nav-logo">
+                    <i class="fas fa-book-open"></i>
+                    <span>JR Blog</span>
+                </a>
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">
+                            <i class="fas fa-blog"></i> Blog
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">
+                            <i class="fas fa-images"></i> Gallery
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">
+                            <i class="fas fa-user"></i> About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">
+                            <i class="fas fa-envelope"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-actions">
+                <button class="nav-icon search-btn" id="searchBtn" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="nav-icon theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="nav-icon hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <button class="search-close" id="searchClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="search-content">
+                <h2>Search Articles</h2>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Type to search..." autocomplete="off">
+                </div>
+                <div class="search-results" id="searchResults"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Language Toggle (Circular Design) -->
+    <div class="language-toggle" id="languageToggle">
+        <div class="language-switch">
+            <span class="language-option active" data-lang="en">EN</span>
+            <span class="language-divider">/</span>
+            <span class="language-option" data-lang="bn">বাং</span>
+        </div>
+    </div>
+
+    <!-- Article Header -->
+    <article class="post-article">
+        <header class="post-header">
+            <div class="container-small">
+                <nav class="breadcrumb">
+                    <a href="../index.html"><i class="fas fa-home"></i> Home</a>
+                    <span><i class="fas fa-chevron-right"></i></span>
+                    <a href="blog.html">Blog</a>
+                    <span><i class="fas fa-chevron-right"></i></span>
+                    <span id="breadcrumbCategory">Article</span>
+                </nav>
+
+                <div class="post-meta">
+                    <span class="post-category" id="postCategory">Category</span>
+                    <span class="post-date">
+                        <i class="far fa-calendar"></i> <span id="postDate">Date</span>
+                    </span>
+                    <span class="post-read-time">
+                        <i class="far fa-clock"></i> <span id="postReadTime">Read Time</span>
+                    </span>
+                    <span class="post-views">
+                        <i class="far fa-eye"></i> <span id="postViews">0</span> views
+                    </span>
+                </div>
+
+                <h1 class="post-title" id="postTitle">Loading...</h1>
+
+                <div class="post-excerpt" id="postExcerpt"></div>
+
+                <div class="post-author">
+                    <img src="../images/profile.jpg" alt="Md Jihadur Rahaman" class="author-avatar" 
+                         onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect fill=%22%236366f1%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22white%22 font-family=%22Arial%22 font-size=%2240%22 x=%2250%22 y=%2265%22 text-anchor=%22middle%22%3EJR%3C/text%3E%3C/svg%3E'">
+                    <div class="author-info">
+                        <div class="author-name">Md Jihadur Rahaman</div>
+                        <div class="author-bio">Curious Learner & Knowledge Seeker</div>
+                    </div>
+                </div>
+
+                <div class="post-tags" id="postTags"></div>
+            </div>
+        </header>
+
+        <!-- Featured Image -->
+        <div class="post-featured-image">
+            <img id="postImage" src="" alt="Article Image">
+        </div>
+
+        <!-- Article Content -->
+        <div class="post-body">
+            <div class="container-small">
+                <div id="postContent" class="post-content">
+                    <p>Loading article content...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Share -->
+        <div class="post-share">
+            <div class="container-small">
+                <h3>Share this article</h3>
+                <div class="share-buttons">
+                    <a href="#" class="share-btn facebook" id="shareFacebook" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook-f"></i> Facebook
+                    </a>
+                    <a href="#" class="share-btn twitter" id="shareTwitter" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-twitter"></i> Twitter
+                    </a>
+                    <a href="#" class="share-btn linkedin" id="shareLinkedIn" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin-in"></i> LinkedIn
+                    </a>
+                    <a href="#" class="share-btn whatsapp" id="shareWhatsApp" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <button class="share-btn copy" id="shareCopy">
+                        <i class="fas fa-link"></i> Copy Link
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Author Bio Section -->
+        <div class="author-section">
+            <div class="container-small">
+                <div class="author-card">
+                    <img src="../images/profile.jpg" alt="Md Jihadur Rahaman" class="author-card-avatar"
+                         onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22120%22 height=%22120%22%3E%3Crect fill=%22%236366f1%22 width=%22120%22 height=%22120%22/%3E%3Ctext fill=%22white%22 font-family=%22Arial%22 font-size=%2250%22 x=%2260%22 y=%2280%22 text-anchor=%22middle%22%3EJR%3C/text%3E%3C/svg%3E'">
+                    <div class="author-card-content">
+                        <h3>About the Author</h3>
+                        <h4>Md Jihadur Rahaman</h4>
+                        <p>Curious Learner & Knowledge Seeker exploring the fundamental questions of existence, society, and human values through philosophy, economics, politics, and moral discourse.</p>
+                        <div class="author-social">
+                            <a href="https://www.facebook.com/profile.php?id=100065185542821" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://twitter.com/jr__jihad" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/MdJihadurRahaman" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.instagram.com/jr_jihad_forever" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation (Previous/Next) -->
+        <div class="post-navigation">
+            <div class="container-small">
+                <div class="nav-links">
+                    <a href="#" class="nav-link-item prev" id="prevPost" style="display: none;">
+                        <span class="nav-label">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </span>
+                        <span class="nav-title"></span>
+                    </a>
+                    <a href="#" class="nav-link-item next" id="nextPost" style="display: none;">
+                        <span class="nav-label">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </span>
+                        <span class="nav-title"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Posts -->
+        <div class="related-posts">
+            <div class="container-small">
+                <h2>Related Articles</h2>
+                <div class="related-posts-grid" id="relatedPostsGrid">
+                    <!-- Related posts will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">
+                        <i class="fas fa-book-open"></i> JR Blog
+                    </h3>
+                    <p class="footer-description">
+                        Exploring fundamental questions of existence, society, and human values through philosophy, economics, politics, and moral discourse.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/profile.php?id=100065185542821" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/jr__jihad" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/MdJihadurRahaman" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/jr_jihad_forever" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@MdJihadurRahaman" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                        <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                        <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-heading">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="blog.html?category=Philosophy"><i class="fas fa-brain"></i> Philosophy</a></li>
+                        <li><a href="blog.html?category=Economics"><i class="fas fa-chart-line"></i> Economics</a></li>
+                        <li><a href="blog.html?category=Politics"><i class="fas fa-landmark"></i> Politics</a></li>
+                        <li><a href="blog.html?category=Moral Values"><i class="fas fa-balance-scale"></i> Moral Values</a></li>
+                        <li><a href="blog.html?category=Notes"><i class="fas fa-sticky-note"></i> Notes</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-heading">Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:jr_jihad@yahoo.com">jr_jihad@yahoo.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Dhaka, Bangladesh</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Md Jihadur Rahaman. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="../js/post.js"></script>
+</body>
+</html>

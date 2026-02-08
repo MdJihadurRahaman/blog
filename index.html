@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Md Jihadur Rahaman - Curious Learner & Knowledge Seeker. Exploring fundamental questions of existence, society, and human values.">
+    <meta name="keywords" content="Philosophy, Economics, Politics, Moral Values, Blog, Md Jihadur Rahaman">
+    <meta name="author" content="Md Jihadur Rahaman">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Md Jihadur Rahaman - Curious Learner & Knowledge Seeker">
+    <meta property="og:description" content="Exploring the fundamental questions of existence, society, and human values">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com">
+    
+    <title>Md Jihadur Rahaman - Curious Learner & Knowledge Seeker</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav-brand">
+                <a href="index.html" class="nav-logo">
+                    <i class="fas fa-book-open"></i>
+                    <span>JR Blog</span>
+                </a>
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="html/blog.html" class="nav-link">
+                            <i class="fas fa-blog"></i> Blog
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="html/gallery.html" class="nav-link">
+                            <i class="fas fa-images"></i> Gallery
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="html/about.html" class="nav-link">
+                            <i class="fas fa-user"></i> About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="html/contact.html" class="nav-link">
+                            <i class="fas fa-envelope"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-actions">
+                <button class="nav-icon search-btn" id="searchBtn" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="nav-icon theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="nav-icon hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <button class="search-close" id="searchClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="search-content">
+                <h2>Search Articles</h2>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Type to search..." autocomplete="off">
+                </div>
+                <div class="search-results" id="searchResults"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content container">
+            <div class="hero-text animate-fade-in">
+                <h1 class="hero-title">
+                    Welcome, I'm <span class="highlight">Md Jihadur Rahaman</span>
+                </h1>
+                <p class="hero-subtitle">Curious Learner & Knowledge Seeker</p>
+                <p class="hero-description">
+                    Exploring the fundamental questions of existence, society, and human values. 
+                    Join me on a journey through philosophy, economics, politics, and moral discourse.
+                </p>
+                <div class="hero-buttons">
+                    <a href="html/blog.html" class="btn btn-primary">
+                        <i class="fas fa-book-reader"></i> Explore Articles
+                    </a>
+                    <a href="html/about.html" class="btn btn-secondary">
+                        <i class="fas fa-user"></i> About Me
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://www.facebook.com/profile.php?id=100065185542821" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com/jr__jihad" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/MdJihadurRahaman" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/jr_jihad_forever" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@MdJihadurRahaman" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image animate-fade-in">
+                <div class="profile-card">
+                    <div class="profile-image-wrapper">
+                        <img src="images/profile.jpg" alt="Md Jihadur Rahaman" class="profile-image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22400%22%3E%3Crect fill=%22%236366f1%22 width=%22400%22 height=%22400%22/%3E%3Ctext fill=%22white%22 font-family=%22Arial%22 font-size=%22180%22 x=%22200%22 y=%22260%22 text-anchor=%22middle%22%3EJR%3C/text%3E%3C/svg%3E'">
+                        <div class="profile-ring"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Topics Section -->
+    <section class="topics section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Explore Topics</h2>
+                <p class="section-subtitle">Dive into different areas of knowledge and inquiry</p>
+            </div>
+
+            <div class="topics-grid">
+                <div class="topic-card animate-on-scroll" data-category="Philosophy">
+                    <div class="topic-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="topic-title">Philosophy</h3>
+                    <p class="topic-description">
+                        Exploring fundamental questions about existence, knowledge, values, and the nature of reality.
+                    </p>
+                    <a href="html/blog.html?category=Philosophy" class="topic-link">
+                        Explore <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="topic-card animate-on-scroll" data-category="Economics">
+                    <div class="topic-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="topic-title">Economics</h3>
+                    <p class="topic-description">
+                        Understanding how societies allocate resources and create value in our interconnected world.
+                    </p>
+                    <a href="html/blog.html?category=Economics" class="topic-link">
+                        Explore <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="topic-card animate-on-scroll" data-category="Politics">
+                    <div class="topic-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3 class="topic-title">Politics</h3>
+                    <p class="topic-description">
+                        Examining power structures, governance systems, and the dynamics of collective decision-making.
+                    </p>
+                    <a href="html/blog.html?category=Politics" class="topic-link">
+                        Explore <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="topic-card animate-on-scroll" data-category="Moral Values">
+                    <div class="topic-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3 class="topic-title">Moral Values</h3>
+                    <p class="topic-description">
+                        Investigating ethical principles, moral reasoning, and what it means to live a good life.
+                    </p>
+                    <a href="html/blog.html?category=Moral Values" class="topic-link">
+                        Explore <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Articles Section -->
+    <section class="latest-articles section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Latest Articles</h2>
+                <p class="section-subtitle">Recent thoughts and reflections</p>
+            </div>
+
+            <div class="articles-grid" id="articlesGrid">
+                <!-- Articles will be loaded here by JavaScript -->
+                <div class="no-posts" id="noPosts">
+                    <div class="no-posts-icon">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <h3>No Articles Yet</h3>
+                    <p>Check back soon for new content exploring philosophy, economics, politics, and moral values.</p>
+                </div>
+            </div>
+
+            <div class="view-all-container" id="viewAllContainer" style="display: none;">
+                <a href="html/blog.html" class="btn btn-primary">
+                    <i class="fas fa-th-list"></i> View All Articles
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta section">
+        <div class="container">
+            <div class="cta-content animate-on-scroll">
+                <h2 class="cta-title">Stay Connected</h2>
+                <p class="cta-description">
+                    Join the conversation and get notified when new articles are published. 
+                    Let's explore these important questions together.
+                </p>
+                <div class="cta-buttons">
+                    <a href="html/contact.html" class="btn btn-light">
+                        <i class="fas fa-paper-plane"></i> Get in Touch
+                    </a>
+                    <a href="html/blog.html" class="btn btn-outline">
+                        <i class="fas fa-rss"></i> Follow Blog
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">
+                        <i class="fas fa-book-open"></i> JR Blog
+                    </h3>
+                    <p class="footer-description">
+                        Exploring fundamental questions of existence, society, and human values through philosophy, economics, politics, and moral discourse.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/profile.php?id=100065185542821" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/jr__jihad" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/MdJihadurRahaman" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/jr_jihad_forever" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@MdJihadurRahaman" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="html/blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                        <li><a href="html/gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                        <li><a href="html/about.html"><i class="fas fa-user"></i> About</a></li>
+                        <li><a href="html/contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-heading">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="html/blog.html?category=Philosophy"><i class="fas fa-brain"></i> Philosophy</a></li>
+                        <li><a href="html/blog.html?category=Economics"><i class="fas fa-chart-line"></i> Economics</a></li>
+                        <li><a href="html/blog.html?category=Politics"><i class="fas fa-landmark"></i> Politics</a></li>
+                        <li><a href="html/blog.html?category=Moral Values"><i class="fas fa-balance-scale"></i> Moral Values</a></li>
+                        <li><a href="html/blog.html?category=Notes"><i class="fas fa-sticky-note"></i> Notes</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-heading">Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:jr_jihad@yahoo.com">jr_jihad@yahoo.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Dhaka, Bangladesh</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Md Jihadur Rahaman. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="js/home.js"></script>
+</body>
+</html>

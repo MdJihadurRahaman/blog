@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "The Meaning of Life: A Philosophical Exploration",
+      "slug": "meaning-of-life",
+      "excerpt": "What is the true meaning of life? Humans have asked this question for thousands of years. An exploration of this fundamental question from a philosophical perspective.",
+      "category": "Philosophy",
+      "date": "Feb 09, 2026",
+      "readTime": "5 min read",
+      "thumbnail": "../images/meaning-of-life.jpg",
+      "tags": ["philosophy", "existence", "meaning", "life"],
+      "views": 0
+    }
+  ]
+}

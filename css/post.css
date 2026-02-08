@@ -116,17 +116,18 @@ body {
 }
 
 /* ================================
-   Reading Progress Bar
+   Reading Progress Bar (FIXED)
    ================================ */
 
 .reading-progress {
     position: fixed;
-    top: var(--header-height);
+    top: 0;
     left: 0;
     width: 0%;
     height: 4px;
     background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-    z-index: 999;
+    z-index: 9999; /* হেডারের উপরে থাকবে */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: width 0.1s ease;
 }
 
@@ -411,54 +412,61 @@ body {
 }
 
 /* ================================
-   Language Toggle (Circular Design)
+   Language Toggle (Floating Circle Button)
    ================================ */
 
 .language-toggle {
     position: fixed;
-    bottom: 2rem;
-    left: 2rem;
+    /* Back to Top এর থেকে উপরে থাকবে (bottom 2rem + 50px button + 20px gap) */
+    bottom: 90px; 
+    right: 2rem;
     z-index: 998;
 }
 
 .language-switch {
-    background: var(--bg-primary);
-    border: 2px solid var(--border-color);
-    border-radius: 2rem;
-    padding: 0.5rem 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    box-shadow: var(--shadow-lg);
-    transition: all var(--transition-base);
+    background: transparent;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+    display: block;
 }
 
-.language-switch:hover {
-    box-shadow: var(--shadow-xl);
-    transform: translateY(-2px);
+/* স্ল্যাশ (/) হাইড করা */
+.language-divider {
+    display: none;
+}
+
+/* 
+   লজিক: আমরা সেই অপশনটিকেই দেখাবো যেটি ACTIVE নয়।
+   অর্থাৎ, English সিলেক্ট করা থাকলে "BN" বাটন দেখাবে।
+   Bangla সিলেক্ট করা থাকলে "EN" বাটন দেখাবে।
+*/
+
+.language-option.active {
+    display: none; /* বর্তমান ভাষা হাইড করা থাকবে */
 }
 
 .language-option {
-    padding: 0.375rem 0.75rem;
-    border-radius: 1.5rem;
-    font-weight: 600;
-    font-size: 0.875rem;
-    cursor: pointer;
-    transition: all var(--transition-fast);
-    color: var(--text-secondary);
-}
-
-.language-option.active {
-    background: var(--primary-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--secondary-color); /* আলাদা কালার যাতে চোখে পড়ে */
     color: white;
+    font-weight: 700;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: var(--shadow-lg);
+    transition: all var(--transition-base);
+    text-transform: uppercase;
 }
 
-.language-option:not(.active):hover {
-    color: var(--primary-color);
-}
-
-.language-divider {
-    color: var(--text-muted);
+.language-option:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+    background: var(--primary-color);
 }
 
 /* ================================
@@ -1182,8 +1190,17 @@ body {
     }
 
     .language-toggle {
-        bottom: 1rem;
-        left: 1rem;
+        /* মোবাইলেও উপরে থাকবে */
+        bottom: 80px; 
+        right: 1rem;
+    }
+    
+    .back-to-top {
+        /* মোবাইলে Back to Top এর পজিশন */
+        bottom: 2rem;
+        right: 1rem;
+        width: 45px;
+        height: 45px;
     }
 }
 
@@ -1203,12 +1220,5 @@ body {
     .share-btn {
         width: 100%;
         justify-content: center;
-    }
-
-    .back-to-top {
-        bottom: 6rem;
-        right: 1rem;
-        width: 45px;
-        height: 45px;
     }
 }

@@ -11,6 +11,23 @@
       "thumbnail": "../images/meaning-of-life.jpg",
       "tags": ["philosophy", "existence", "meaning", "life"],
       "views": 0
+    },
+    {
+      "id": 2,
+      "title": "Digital Safety in Bangladesh: Protecting Youth Online",
+      "slug": "digital-safety-bangladesh",
+      "excerpt": "An in-depth look at the growing digital safety challenges facing young people in Bangladesh, including cyberbullying, online violence, misinformation, and practical solutions to build a safer online environment.",
+      "category": "Moral Values",
+      "date": "Feb 12, 2026",
+      "readTime": "8 min read",
+      "thumbnail": "../images/digital-safety-bangladesh.jpg",
+      "tags": [
+        "digital safety",
+        "cyberbullying",
+        "online safety",
+        "digital literacy"
+      ],
+      "views": 0
     }
   ]
 }
